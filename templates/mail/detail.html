@@ -1,0 +1,17 @@
+{% extends "/base.html" %}
+{% block title %}消息{% endblock%}
+{% block main %}
+
+
+<div id="main">
+<div class="panel">
+    <div class="inner">
+<p>发件人 id: {{ mail.sender_id }}</p>
+<p>收件人 id: {{ mail.receiver_id }}</p>
+<p>内容</p>
+<p>{{ mail.content }}</p>
+
+{% endblock %}
+        </div>
+</div>
+    </div>

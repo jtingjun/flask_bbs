@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/bbs":{"guestpath":"/var/www/bbs","hostpath":"G:/github/BBS","disabled":false,"__vagrantfile":true}}}
