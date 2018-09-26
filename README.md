@@ -1,13 +1,18 @@
 # BBS
 使用flask框架开发的论坛
+能够实现注册登录、发布帖子、发站内信、修改用户名签名、上传头像等基本功能
 
-## 登陆
-![login](https://github.com/HarpSun/BBS/blob/master/static/login.gif)
+## 修改头像
+![image](https://github.com/jtingjun/flask_bbs/blob/master/static/avatar.gif)
 
+## 登录
+![image](https://github.com/jtingjun/flask_bbs/blob/master/static/login.gif)
 
-## 发送站内信
-![message](https://github.com/HarpSun/BBS/blob/master/static/message.gif)
+## 发站内信
+![image](https://github.com/jtingjun/flask_bbs/blob/master/static/message.gif)
 
+## 修改签名
+![image](https://github.com/jtingjun/flask_bbs/blob/master/static/setting.gif)
 
-## 更改用户设置
-![setting](https://github.com/HarpSun/BBS/blob/master/static/setting.gif)
+## 发布帖子
+![image](https://github.com/jtingjun/flask_bbs/blob/master/static/topic.gif)
