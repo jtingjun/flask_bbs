@@ -20,21 +20,21 @@ apt-get update
 debconf-set-selections database_secret.conf
 
 apt-get install -y git supervisor nginx python3.6 mysql-server
-python3.6 /root/BBS/get-pip.py
-pip3 install jinja2 flask gunicorn pymysql flask_sqlalchemy
+python3.6 /home/ubuntu/flask_bbs/get-pip.py
+pip3 install jinja2 flask gunicorn pymysql flask_sqlalchemy flask_admin
 
 # 删掉 nginx default 设置
 rm -f /etc/nginx/sites-enabled/default
 rm -f /etc/nginx/sites-available/default
 
 # supervisor
-cp /root/BBS/bbs.conf /etc/supervisor/conf.d/bbs.conf
+cp /home/ubuntu/flask_bbs/bbs.conf /etc/supervisor/conf.d/bbs.conf
 # nginx
 # 不要在 sites-available 里面放任何东西
-cp /root/BBS/bbs.nginx /etc/nginx/sites-enabled/bbs
+cp /home/ubuntu/flask_bbs/bbs.nginx /etc/nginx/sites-enabled/bbs
 
 # 初始化
-cd /root/BBS
+cd /home/ubuntu/flask_bbs
 python3.6 reset.py
 
 # 重启服务器
